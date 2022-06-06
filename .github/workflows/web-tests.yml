@@ -12,11 +12,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Build
         uses: ./.github/actions/generate-npmrc
 
       - name: Install dependencies
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: yarn
