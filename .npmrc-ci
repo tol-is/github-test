@@ -1,0 +1,4 @@
+@cyber-cats:registry=https://npm.pkg.github.com/cyber-cats
+always-auth=true
+//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
+//npm.pkg.github.com/cyber-cats/:_authToken=${GITHUB_TOKEN}
