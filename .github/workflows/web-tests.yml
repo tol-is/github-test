@@ -14,3 +14,6 @@ jobs:
 
       - name: Build
         uses: ./.github/actions/generate-npmrc
+
+      - name: Install dependencies
+        run: yarn

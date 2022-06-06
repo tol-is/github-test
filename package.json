@@ -1,0 +1,11 @@
+{
+  "name": "github-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:a7sc11u/github-test.git",
+  "author": "Apostolos Christodoulou <a7sc11u@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@cyber-cats/fonts": "0.0.1-rc.5"
+  },
+}
