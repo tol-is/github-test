@@ -1,0 +1,14 @@
+name: Npmrc
+description: Create npmrc file with GITHUB_TOKEN
+
+runs:
+  using: "composite"
+  steps:
+    - name: Create npmrc file with GITHUB_TOKEN
+      id: generate-npmrc
+      run: |
+        echo '//npm.pkg.github.com/cyber-cats/:_authToken=${{ secrets.GITHUB_TOKEN  }}' > ${{ github.workspace }}/.npmrc
+        cat .npmrc
+      shell: bash
+
+

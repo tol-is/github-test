@@ -1,0 +1,12 @@
+name: Web Development Deploy
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: build
+    steps:
+      - name: Build
+        uses: ./.github/actions/generate-npmrc
